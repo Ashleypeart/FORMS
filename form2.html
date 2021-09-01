@@ -1,0 +1,41 @@
+<!-- Create a form 2.
+Create a form that includes a input element that gives a user to select only one of many options.
+
+Only one selection should be able to be selected at a time.
+Must use at least one fieldset element
+Must contain labels -->
+
+<!DOCTYPE html
+<html>
+    <head>
+        <title>Form 2</title>
+      </head>
+      <style>
+        body {background-color: rgb(4, 3, 53);}
+        h1   {color: white;padding: 30px;margin: 20px}
+        h2   {color: white;padding: 30px;margin: 20px}
+        form    {color: white;
+font-size: 160%;padding: 30px;margin: 50px}
+        </style>
+    <body>
+        <h1 style="font-size:60px;">FORM 2</h1>
+        <h2>Includes an input element that gives user ability to select only one of many options</h2>
+        <form>
+            <fieldset style="border:5px solid white;">
+                <legend> WHAT WOULD YOU LIKE TO EAT? (Choose One)</legend>
+                  <p>
+                    <label> <input type="radio" name="buttons" value="fruit"/> FRUIT </label>
+                  </p>
+                  <p>
+                    <label> <input type="radio" name="buttons" value="meat"/> MEAT </label>
+                  </p>
+                  <p>
+                    <label> <input type="radio" name="buttons" value="bread"/> BREAD </label>
+                  </p>
+                  <p>
+                    <label> <input type="radio" name="buttons" value="veggies"/> VEGGIES </label>
+                  </p>
+            </fieldset>
+          </form>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+<!-- Create a form 1.
+Create a form that includes a input element and can except text from a user.
+Must be able to include text in the input field
+Must use at least one fieldset element
+Must Contain Labels
+-----------
+All HTML documents must start with a <!DOCTYPE> declaration.
+The declaration is not an HTML tag. It is an "information" 
+to the browser about what document type to expect.
+
+HTML is the root of a HTML doc, a container for all elements except.
+The <head> element is a container for metadata (data about data) 
+and is placed between the <html> tag and the <body> tag.
+
+Metadata is data about the HTML document. Metadata is not displayed.
+
+Metadata typically define the document title, character set, styles, 
+scripts, and other meta information.
+
+The <title> tag defines the title of the document. The title must be text-only, 
+and it is shown in the browser's title bar or in the page's tab
+(HTML Elements Reference)
+
+Body tag defines the document's body contains all the contents of an HTML document, 
+such as headings, paragraphs, images, hyperlinks, tables, lists, etc
+
+Form tag is used to create an HTML form for user input
+Feildset Tag draws a box around group of elements in a form.
+Legend Tag defines a caption for the feildset element.
+Label defines a label for several elements
+For specifies the id of the form element the label should be bound to
+Br element breaks up lines in a text 
+Input tag specifies an input field where the user can enter data
+Name specifies the name of an <input> element 
+Type specifies the type <input> element to display ex: text, email, date, sumbuit
+-->
+<!DOCTYPE html
+<html>
+    <head>
+        <title>Form 1</title>
+      </head>
+      <style>
+        body {background-color: rgb(4, 3, 53);}
+        h1   {color: white;padding: 30px;margin: 20px}
+        h2   {color: white;padding: 30px;margin: 20px}
+        form    {color: white;
+font-size: 160%;padding: 30px;margin: 50px}
+        </style>
+    <body>
+        <h1 style="font-size:60px;">FORM 1</h1>
+        <h2>Includes an input element and can except text from a user</h2>
+        <form>
+            <fieldset style="border:5px solid yellow;">
+
+              <legend><b>TELL US WHO YOU BE:</b></legend>
+
+              <label for="fname"><b>First Name:</b></label>
+              <input type="text" id="fname" name="fname"><br><br>
+
+              <label for="lname"><b>Last Name:</b></label>
+              <input type="text" id="lname" name="lname"><br><br>
+
+              <label for="email"><b>Email:</b></label>
+              <input type="email" id="email" name="email"><br><br>
+
+              <label for="birthday"><b>Birthday:</b></label>
+              <input type="date" id="birthday" name="birthday"><br><br>
+
+              <input type="submit" value="PERIODT">
+
+            </fieldset>
+          </form>
+    </body>
+</html>
